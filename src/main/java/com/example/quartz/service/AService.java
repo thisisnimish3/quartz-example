@@ -8,6 +8,11 @@ import java.util.Date;
 public class AService {
 
     public void printTime() {
-        System.out.println("Hi there ! " + new Date());
+        System.out.println("Job A2:  Hi there ! " + new Date());
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
